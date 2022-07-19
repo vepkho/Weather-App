@@ -1,0 +1,45 @@
+.Wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 280px;
+    margin: 0 auto;
+    color: white;
+    text-transform:capitalize;
+}
+
+.Title{
+    font-size: 24px;
+    padding: 24px 0;
+}
+
+.Wrapper__Container{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    font-size: 18px;
+
+}
+
+
+@media only screen and (max-width: 1024px) {
+    .Wrapper{
+        gap: 0;
+    }
+
+    .Title{
+        padding: 12px 0;
+    }
+}
+
+@media only screen and (max-width: 460px) {
+    .Wrapper{
+        display: none;
+    }
+
+    .Title{
+        padding: 12px 0;
+        bottom: 14px;
+        left: 35px;
+    }
+}

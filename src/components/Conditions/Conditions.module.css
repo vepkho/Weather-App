@@ -1,0 +1,116 @@
+.Wrapper{
+    width: 600px;
+    height: 600px;
+    background-image: url(https://img.freepik.com/free-photo/view-new-york-city-usa_53876-153448.jpg?w=2000);
+    background-size: 600px 600px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.Wrapper .Wrapper__Container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    color: white;
+    position: absolute;
+    bottom: 38px;
+    left: 48px;
+}
+
+.Wrapper .Wrapper__Container .Temperature{
+    font-size: 72px;
+}
+
+.Name{
+    font-size: 36px;
+}
+
+.CircularProgress{
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.Error {
+    position: absolute;
+    top: 75%;
+    left: 82%;
+    transform: translate(-50%, -50%);
+    color: red;
+    text-transform: uppercase;
+    font-size: 20px;   
+    width: 300px;
+}
+
+
+.Image{
+    width: 300px;
+    height: 80vh;
+}
+
+@media only screen and (max-width: 1024px) {
+    .Wrapper {
+      flex-direction: column-reverse;
+      width: 398px;
+      height: 70vh;
+      background-size: 400px 35vh;
+      border-bottom-right-radius: 10px;
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 10px;
+    }
+
+    form{
+        width: 400px;
+        height: 300px;
+    }
+    .Wrapper .Wrapper__Container{
+        bottom: 8px;
+        left: 58px;
+    }
+    .CircularProgress{
+        position: absolute;
+        top: 70%;
+        left: 42%;
+        transform: translate(-50%, -50%);
+        color: white;
+    }
+    .Error {
+        top: 75%;
+        left: 55%;
+    }
+    
+    
+}
+
+@media only screen and (max-width: 460px) {
+    .Wrapper {
+      flex-direction: column-reverse;
+      width: 320px;
+      background: none;
+    }
+
+    form{
+        width: 320px;
+        height: 300px;
+        /* padding: 0; */
+    }
+    .Wrapper .Wrapper__Container{
+        bottom: 14px;
+        left: 38px;
+    }
+    .CircularProgress{
+        position: absolute;
+        top: 81%;
+        left: 42%;
+        transform: translate(-50%, -50%);
+        color: white;
+    }
+    .Error {
+        top: 85%;
+        left: 57%;
+    }
+    
+}
