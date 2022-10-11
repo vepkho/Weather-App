@@ -1,6 +1,6 @@
 # Weather Application
 
-It wass my first ReactJS application, where I tried to use my theoretical knowledge  in practice.
+It was my first ReactJS application, where I tried to use my theoretical knowledge  in practice.
 
 ## Experience I gained 
 
