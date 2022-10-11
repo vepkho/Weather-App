@@ -27,16 +27,16 @@ const Forecast = () => {
         setLoading(true);
 
         const uriEncodedCity = encodeURIComponent(city);
-
+        
         const options = {
             method: 'GET',
             headers: {
-                'X-RapidAPI-Key': "5e4726da61msh45db35fdaa9f6bep100a78jsn68e376be781b",
-                'X-RapidAPI-Host': 'community-open-weather-map.p.rapidapi.com'
+                'X-RapidAPI-Key': 'b7ad66b1damshc70a924e9aa32e4p1b277ajsnf711005743f2',
+                'X-RapidAPI-Host': 'open-weather13.p.rapidapi.com'
             }
         };
         
-        fetch(`https://community-open-weather-map.p.rapidapi.com/weather?units=${unit}&q=${uriEncodedCity}`, options)
+        fetch(`https://open-weather13.p.rapidapi.com/city/${uriEncodedCity}`, options)
             .then(response => response.json())
             .then(response => {
                 if (response.cod !== 200){
